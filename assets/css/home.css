@@ -475,28 +475,28 @@ li{
     }
     #signin{
         font-family: sans-serif;
-        margin-left: -8%;
+        margin-left: -11%;
     }
     #signup{
         font-family: sans-serif;
-        margin-left: -8%;
+        margin-left: -11%;
     }
     #or{
         font-family: sans-serif;
-        margin-left: -10%;
+        margin-left: -13%;
     }
     #login{
         font-family: sans-serif;
-        margin-left: 35%;
+        margin-left: 33%;
     }
     #email{
         font-family: sans-serif;
-        margin-left: 22%;
+        margin-left: 20%;
         margin-bottom: 0.35%;
     }
     #password{
         font-family: sans-serif;
-        margin-left: 22%;
+        margin-left: 20%;
         margin-bottom: 0.35%;
     }
     #user_profile{
