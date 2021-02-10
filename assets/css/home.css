@@ -1,0 +1,561 @@
+body{
+    background-color:#faebd766;
+}
+#header{
+    text-align: center;
+    padding-top: 2%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-family: cursive;
+    font-size: 35px;
+}
+#head{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-family: cursive;
+    font-size: larger;
+    margin-left: 25%;
+}
+#head1{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-family: cursive;
+    font-size: larger;
+    margin-left: 29%;
+}
+#date2{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-family: cursive;
+    font-size: larger;
+    margin-left: 25%;
+}
+#desc{
+    margin-left: 24%;
+    padding-top: .8%;
+    padding-right: 25%;
+    padding-bottom: 1.5%;
+}
+input{
+    font-family: cursive;
+    padding: 1%;
+    background-color: transparent;
+    border: none;
+}
+#category{
+    font-family: cursive;
+    background-color: transparent;
+    border: none;
+    margin-left: 25%;
+    padding-top: 3%;
+    padding-bottom: 8%;
+}
+#date{
+    font-family: cursive;
+    margin-left: 25%;
+}
+#flex{
+    display: flex;
+    margin-left: 22%;
+}
+button{
+    padding: 1%;
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: .5%;
+    margin-left: 40%;
+    color: white;
+}
+#date1{
+    margin-left: 22%;
+}
+#add{
+    background-color: black;
+}
+#delete{
+    background-color: red;
+    margin-left: -0%;
+}
+li{
+    font-family: cursive;
+    margin-left: 22%;
+    display: flex;
+}
+#DIS{
+    margin-left: 1%;
+    font-family: cursive;
+}
+#CAT{
+    background-color: #91a6af;
+    padding: .5%;
+    position: absolute;
+    margin-left: 28%;
+    margin-top: -1.5%;
+}
+#checked{
+    width: 18px;
+    height: 18px;
+}
+#user_profile{
+    margin-left: 80%;
+    margin-top: -3.5%;
+    margin-bottom: 3.5%;
+}
+#signin{
+    text-align: center;
+}
+#signup{
+    text-align: center;
+}
+#or{
+    text-align: center;
+}
+#login{
+    margin-left: 46%;
+    background-color: black;
+}
+#email{
+    padding-right: 5%;
+    margin-left: 39%;
+    border: 2px solid black;
+    margin-bottom: 0.2%;
+}
+#password{
+    padding-right: 5%;
+    margin-left: 39%;
+    border: 2px solid black;
+    margin-bottom: 0.2%;
+}
+@media only screen and (max-width: 1100px) {
+    #desc{
+        margin-left: 15%;
+    }
+    #head{
+        margin-left: 16%;
+    }
+    #head1{
+        margin-left: -40%;
+    }
+    #category{
+        margin-left: -42%;
+    }
+    #header{
+        margin-left: 12%;
+    }
+    #CAT{
+        margin-left: 60%;
+    }
+    #checked{
+        margin-left: -16%;
+    }
+    #user_profile{
+        margin-left: 80%;
+        margin-top: -5%;
+        margin-bottom: 3.5%;
+    }
+    #signin{
+        margin-left: 10%;
+    }
+    #signup{
+        margin-left: 10%;
+    }
+    #or{
+        margin-left: 10%;
+    }
+    #login{
+        margin-left: 51%;
+    }
+    #email{
+        margin-left: 43%;
+    }
+    #password{
+        margin-left: 43%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #desc{
+        margin-left: 15%;
+    }
+    #head{
+        margin-left: 16%;
+    }
+    #head1{
+        margin-left: -36%;
+    }
+    #category{
+        margin-left: -38%;
+    }
+    #header{
+        margin-left: 12%;
+    }
+    #CAT{
+        margin-left: 60%;
+    }
+    #checked{
+        margin-left: -16%;
+    }
+    #user_profile{
+        margin-left: 77%;
+        margin-top: -6%;
+        margin-bottom: 3.5%;
+    }
+    #signin{
+        margin-left: 14%;
+    }
+    #signup{
+        margin-left: 14%;
+    }
+    #or{
+        margin-left: 14%;
+    }
+    #login{
+        margin-left: 52.5%;
+    }
+    #email{
+        margin-left: 43%;
+    }
+    #password{
+        margin-left: 43%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #desc{
+        margin-left: 15%;
+    }
+    #head{
+        margin-left: 16%;
+    }
+    #head1{
+        margin-left: -30%;
+    }
+    #category{
+        margin-left: -32%;
+    }
+    #header{
+        margin-left: 12%;
+    }
+    #CAT{
+        margin-left: 60%;
+    }
+    #checked{
+        margin-left: -16%;
+    }
+    #signin{
+        margin-left: 12%;
+    }
+    #signup{
+        margin-left: 12%;
+    }
+    #or{
+        margin-left: 12%;
+    }
+    #login{
+        margin-left: 50%;
+    }
+    #email{
+        margin-left: 40%;
+    }
+    #password{
+        margin-left: 40%;
+    }
+}
+@media only screen and (max-width: 700px){
+    #desc{
+        margin-left: 14%;
+    }
+    #head{
+        margin-left: 15%;
+    }
+    #head1{
+        margin-left: -30%;
+    }
+    #category{
+        margin-left: -32%;
+    }
+    #header{
+        margin-left: -3%;
+    }
+    #CAT{
+        margin-left: 60%;
+    }
+    #checked{
+        margin-left: -16%;
+    }
+    #user_profile{
+        margin-left: 70%;
+        margin-top: -7%;
+        margin-bottom: 3.5%;
+    }
+    #signin{
+        margin-left: -2%;
+    }
+    #signup{
+        margin-left: -2%;
+    }
+    #or{
+        margin-left: -2%;
+    }
+    #login{
+        margin-left: 42%;
+    }
+    #email{
+        margin-left: 32%;
+    }
+    #password{
+        margin-left: 32%;
+    }
+}
+@media only screen and (max-width: 620px) {
+    #desc{
+        margin-left: 14%;
+    }
+    #head{
+        margin-left: 15%;
+    }
+    #head1{
+        margin-left: -28%;
+    }
+    #header{
+        margin-left: -3%;
+    }
+    #date1{
+        margin-left: -15%;
+    }
+    #date2{
+        margin-left: -15%;
+    }
+    #category{
+        margin-left: -30%;
+    }
+    #CAT{
+        margin-left: 70%;
+    }
+    #checked{
+        margin-left: -36%;
+    }
+    #user_profile{
+        margin-left: 70%;
+        margin-top: -8%;
+        margin-bottom: 3.5%;
+    }
+    #signin{
+        margin-left: 0%;
+    }
+    #signup{
+        margin-left: 0%;
+    }
+    #or{
+        margin-left: 0%;
+    }
+    #login{
+        margin-left: 43%;
+    }
+    #email{
+        margin-left: 32%;
+    }
+    #password{
+        margin-left: 32%;
+    }
+}
+@media only screen and (max-width: 560px) {
+    #desc{
+        margin-left: 1%;
+    }
+    #head{
+        margin-left: 2%;
+    }
+    #head1{
+        margin-left: -72%;
+    }
+    #header{
+        margin-left: -3%;
+    }
+    #category{
+        margin-left: -75%;
+    }
+    #date1{
+        margin-left: -20%;
+    }
+    #date2{
+        margin-left: -20%;
+    }
+    #add{
+        margin-left: 30%;
+    }
+    #CAT{
+        margin-left: 70%;
+    }
+    #checked{
+        margin-left: -36%;
+    }
+    #user_profile{
+        margin-left: 70%;
+        margin-top: -8.5%;
+        margin-bottom: 3.5%;
+    }
+    #signin{
+        margin-left: -6%;
+    }
+    #signup{
+        margin-left: -6%;
+    }
+    #or{
+        margin-left: -8%;
+    }
+    #login{
+        margin-left: 38%;
+    }
+    #email{
+        margin-left: 25%;
+    }
+    #password{
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width: 420px) {
+    #header{
+        font-family: sans-serif;
+        margin-left: -12%;
+    }
+    button{
+        margin-left: 26%;
+    }
+    #head{
+        font-family: sans-serif;
+    }
+    #head1{
+        font-family: sans-serif;
+    }
+    #date2{
+        font-family: sans-serif;
+    }
+    input{
+        font-family: sans-serif;
+    }
+    #category{
+        font-family: sans-serif;
+    }
+    #date{
+        font-family: sans-serif;
+    }
+    button{
+        font-family: sans-serif;
+    }
+    li{
+        font-family: sans-serif;
+    }
+    #DIS{
+        font-family: sans-serif;
+    }
+    #desc{
+        margin-left: 1.5%;
+    }
+    #head{
+        margin-left: 2.5%;
+    }
+    #head1{
+        margin-left: -60%;
+    }
+    #category{
+        margin-left: -62%;
+    }
+    #date1{
+        margin-left: -30.5%;
+    }
+    #date2{
+        margin-left: -28%;
+    }
+    #CAT{
+        padding: .9%;
+        margin-left: 70%;
+    }
+    #checked{
+        font-family: sans-serif;
+        margin-left: -40%;
+    }
+    #signin{
+        font-family: sans-serif;
+        margin-left: -8%;
+    }
+    #signup{
+        font-family: sans-serif;
+        margin-left: -8%;
+    }
+    #or{
+        font-family: sans-serif;
+        margin-left: -10%;
+    }
+    #login{
+        font-family: sans-serif;
+        margin-left: 35%;
+    }
+    #email{
+        font-family: sans-serif;
+        margin-left: 22%;
+        margin-bottom: 0.35%;
+    }
+    #password{
+        font-family: sans-serif;
+        margin-left: 22%;
+        margin-bottom: 0.35%;
+    }
+    #user_profile{
+        margin-left: 62%;
+        margin-top: -8.5%;
+        margin-bottom: 3.5%;
+    }
+    #add{
+        margin-left: 22%;
+    }
+}
+@media only screen and (max-width: 390px) {
+    #header{
+        margin-left: -13%;
+    }
+    #head1{
+        margin-left: -55%;
+    }
+    #category{
+        margin-left: -58%;
+    }
+    #date1{
+        margin-left: -45%;
+    }
+    #date2{
+        margin-left: -42%;
+    }
+    #user_profile{
+        margin-left: 60%;
+        margin-top: -10%;
+        margin-bottom: 3.5%;
+    }
+    #signin{
+        font-family: sans-serif;
+        margin-left: -12%;
+    }
+    #signup{
+        font-family: sans-serif;
+        margin-left: -12%;
+    }
+    #or{
+        font-family: sans-serif;
+        margin-left: -13%;
+    }
+    #login{
+        font-family: sans-serif;
+        margin-left: 33%;
+    }
+    #email{
+        font-family: sans-serif;
+        margin-left: 19%;
+        margin-bottom: .5%;
+    }
+    #password{
+        font-family: sans-serif;
+        margin-left: 19%;
+        margin-bottom: .5%;
+    }
+    #add{
+        margin-left: 20%;
+    }
+}

@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+         <!-- adding css file -->
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+    </head>
+    <body>
+        <div id="header">
+            <i class="fa fa-clipboard-list"></i>
+            TO-DO APP
+        </div>
+        <ul id="user_profile">
+            <% if(locals.user){%>
+                <li><%= user.name %></li>
+                <li><a href="/signout">Sign-out  <i class="fas fa-sign-out-alt"></i></a></li>
+            <% }%>
+        </ul>
+        <hr>
+        <!-- form to create task -->
+        <form action="/create-task" method="POST" >
+            <label id="head" >Description</label>
+            <br>
+            <input id="desc" type="text" placeholder="What do you need to do" name="description" required>
+            <hr>
+            <div id="flex">
+                <div>
+                    <label id="head1">Category</label>
+                    <br>
+                    <select id="category" name="category">
+                    <option value="" disabled selected>Choose a category</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                    <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="date">
+                    <label id="date2">Due Date</label>
+                    <br>
+                    <input id="date1" type="date" name="date" required>
+                </div>
+            </div>
+            <hr>
+            <button id="add" onclick="check()" type="submit">
+                <i class="fa fa-plus"></i>
+                Add Task
+            </button>
+            <button form="DEL" id="delete" onclick="delfunction()" type="submit">
+                <i class="fa fa-trash"></i>
+                Delete Task
+            </button>
+        </form>
+    <ol>
+        <!--  form to delete task -->
+        <% for (let i of todo_list) { %> 
+            <% if(user.id == i.user){%>
+                <form action="/delete-task" method="POST" id="DEL">
+                    <li>
+                        <input  type="checkbox" name="task" id="checked" value="<%= i.id%>"> 
+                        <!-- display output fethed from database -->
+                        <div id="DIS">
+                            <%= i.description%> 
+                            <div id="CAT">
+                                <%= i.category%>
+                            </div>
+                            <p style="color: gray; margin-top: 1.2%; font-size: small;"><% let f_date;
+                                {
+                                    let d=i.date.getDate();
+                                    let m=i.date.getMonth()+1; 
+                                    let y=i.date.getFullYear();  
+                                    f_date=d+'/'+m+'/'+y
+                                } %>
+                                <i class="fa fa-calendar-alt" style="color: gray; font-size: 13px;"></i>  
+                                <%= f_date %>
+                            </p>
+                        </div>
+                    </li>
+                <% } %>
+            <%}%>    
+        </ol>
+    </form>
+    <!--  adding javascript -->
+    <script src="/js/home.js"></script>
+    </body>
+</html>
